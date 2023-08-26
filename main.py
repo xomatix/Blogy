@@ -11,7 +11,3 @@ app.include_router(post_router, prefix="/api/post")
 
 task = threading.Thread(target=db.InitDB())
 task.start()
-
-uvicorn_config = Config(app, host="0.0.0.0", port=8000)  # Modify host and port as needed
-server = Server(uvicorn_config)
-application = server.app
