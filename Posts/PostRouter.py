@@ -7,7 +7,7 @@ import random
 
 router = APIRouter()
 
-@router.get("/{category}")
+@router.get("/tylko/do/dodania/danych/{category}")
 async def read_item(category: int):
     list = []
 

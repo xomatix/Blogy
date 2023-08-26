@@ -3,7 +3,6 @@ from fastapi.routing import APIRouter
 from Posts.PostRouter import router as post_router
 import threading
 import DB.DataBaseConnect as db 
-from uvicorn import Server, Config
 
 app = FastAPI()
 
