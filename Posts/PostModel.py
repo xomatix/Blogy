@@ -7,13 +7,13 @@ table_name = "tb_posts"
 class Post(BaseModel):
     id: int
     title: str
-    description: Optional[str]
+    description: str
     surface: float
     price: float
     category: int
-    location: Optional[str]
+    location: str
     date_of_creation: datetime.datetime
-    parameters: Optional[str]
+    parameters: str
 
     def generate_create_table_sql():
         columns = []
